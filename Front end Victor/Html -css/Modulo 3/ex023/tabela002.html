@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TABELAS2</title>
+    <script>
+        //isso aqui foi invenção minha
+        function soma(){
+            var s = 0;
+            for(i = 0; i < 4; i++){
+                var num = parseInt(document.getElementsByClassName("num")[i].innerHTML);
+                s += num;
+                
+            }
+            return s; 
+        }
+         
+    </script>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            width: 500px;
+            border-collapse: collapse;
+            position: relative;
+        }
+
+        td, th{
+            border: 1px solid black;
+            padding: 10px;
+        }
+        caption{
+            font-size: 1.5em;
+            font-weight: bolder;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
+        td.num, td#total{
+            text-align: right;
+        }
+
+        thead, tfoot{
+            background-color: gray;
+            color: white;
+        }
+        thead > tr > th{
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+        }
+        tbody > tr:nth-child(2n){
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <!--ANATOMIA PARA TABELAS GRANDES
+    TABLE
+    CAPTION
+        THEAD
+            TR, TD, TH
+        TBODY
+            TR, TD, TH
+        TFOOT
+            TR, TD, TH
+    -->
+
+    <table>
+        <caption>População das unidades federativas</caption>
+        <thead>
+            <tr>
+                <th scope="col">ESTADO</th><!--CABEÇALHO-->
+                <th scope="col" style="width: 50px;">POPULAÇÃO</th>
+                
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São paulo</td>
+                <td class="num">45919049</td>
+            </tr>
+            <tr>
+                <td>Minas gerais</td>
+                <td class="num">21168791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17264943</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14985284</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total Habitantes</th>
+                <td id="total"></td>
+            </tr>
+        </tfoot>
+    </table>
+    <script>
+        document.getElementById("total").innerHTML = soma();
+    </script>
+</body>
+</html>

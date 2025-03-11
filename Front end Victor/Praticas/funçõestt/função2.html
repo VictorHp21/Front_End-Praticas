@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Escreva uma função que retorne o cubo de um número fornecido pelo usuário</h1>
+    <input type="number" name="num" id="num">
+    <input type="button" value="calcular" onclick="calcular()">
+    <p id="res"></p>
+
+    <script>
+        function calcular(){
+            var num = document.getElementById('num').value
+            var resultado = (num ** 3)
+            res.innerHTML = `O resultado é ${resultado}`
+
+
+        }
+    </script>
+</body>
+</html>

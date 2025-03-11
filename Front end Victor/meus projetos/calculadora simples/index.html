@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora simples</title>
+</head>
+<body>
+    <script>
+        window.alert("Bem vindo a calculadora simples.")
+        var operacao = window.prompt("digite S para somar, M para multiplicar, D para dividir e L para subtrair.");
+        if(operacao == 'S' || operacao =='s'){
+            var s1 = Number(prompt("digite o primeiro numero:"));
+            var s2 = Number(prompt("digite o segundo numero:" ));
+            var somar = s1+s2;
+            alert(somar);
+        } else if(operacao == 'D' || operacao == 'd'){ var d1 = Number(prompt("digite o primeiro numero:"));
+        var d2 = Number(prompt("digite o segundo numero:"));
+        var dividir = d1/d2;
+        alert(dividir);
+        } else if(operacao == 'M' || operacao == 'm'){var m1 = Number(prompt("digite o primeiro numero"));
+        var m2 = Number(prompt("digite o segundo numero"));
+        var multi = m1*m2;
+        alert(multi);
+    } else if(operacao == 'L' || operacao == 'l'){
+var l1 = Number(prompt("digite o primeiro numero:"));
+var l2 = Number(prompt("digite o segundo numero:"));
+var subtrair = l1-l2;
+alert(subtrair);
+    }
+    </script>
+</body>
+</html>

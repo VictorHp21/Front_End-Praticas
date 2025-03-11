@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Escreva uma função em JavaScript que realize a conversão de uma temperatura fornecida em graus Fahrenheit (F) para Celsius (C).
+
+        Dica: para converter uma temperatura em F para C, subtraia 32 da temperatura e multiplique o resultado por 0,5556 (ou 5/9).</h1>
+        Digite a temperatura.
+        <input type="number" name="temperatura" id="temp">
+        <input type="button" value="calcular" id="num" onclick="qqtemp()">
+        <p id="res"></p>
+
+        <script>
+            function qqtemp(){
+               
+                var temperat = document.getElementById('temp').value
+                var resultado = Number(temperat - 32) * 5/9
+                res.innerHTML = `A temperatura convertida é ${resultado}`
+            }
+        </script>
+</body>
+</html>

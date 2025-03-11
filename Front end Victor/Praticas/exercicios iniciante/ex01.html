@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Clique no botão abaixo</h1>
+    <input type="button" value="Clique aqui!!!" size="15px" onclick="ola()"><br>
+    <section id="resultado">
+        <p>Aqui vai aparecer o resultado...</p>
+    </section>
+    <script>
+        function ola(){
+            let nome = prompt('Digite o seu nome: ')
+            let res = document.getElementById('resultado')
+            res.innerHTML = `Ola <strong>${nome}</strong> bem vindo. &#x1F596`
+        }
+       
+    </script>
+</body>
+</html>

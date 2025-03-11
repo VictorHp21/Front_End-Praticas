@@ -1,0 +1,119 @@
+@charset "UFT-8";
+
+/*Versão mobile first*/
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+body, html{
+    
+    background-color: rgb(232, 148, 232);
+}
+
+header {
+    background-color: gray;
+
+}
+
+h1 {
+    padding: 10px;
+    text-align: center;
+}
+
+menu{
+    display: none;
+}
+
+menu >  ul {
+    list-style-type: none;
+}
+
+menu > ul > li > a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    text-align: center;
+    background-color: rgb(150, 150, 150);
+    color: white;
+    border-top: 2px solid gray;
+}
+
+a:hover{
+    background-color: gray;
+}
+
+main{
+    width: 90vw;
+    background-color: white;
+    margin:auto;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+article > h2{
+    padding-bottom: 20px;
+}
+
+article > p{
+    text-align: justify;
+    margin-bottom: 20px;
+    text-indent: 20px;
+}
+
+/*Button menu*/
+/* From Uiverse.io by gagan-gv */ 
+.btn {
+    position: relative;
+    width: 150px;
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    transition: all 0.5s ease-in-out;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    background: #040f16;
+    color: #f5f5f5;
+  }
+  
+  .btn:hover {
+    box-shadow: 0 0 20px 0px #2e2e2e3a;
+  }
+  
+  .btn .icon {
+    position: absolute;
+    height: 40px;
+    width: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+  }
+  
+  .btn .text {
+    transform: translateX(55px);
+  }
+  
+  .btn:hover .icon {
+    width: 175px;
+  }
+  
+  .btn:hover .text {
+    transition: all 0.5s;
+    opacity: 0;
+  }
+  
+  .btn:focus {
+    outline: none;
+  }
+  
+  .btn:active .icon {
+    transform: scale(0.85);
+  }

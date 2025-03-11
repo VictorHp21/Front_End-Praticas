@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de Iframe</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        iframe#tela{
+            width: 95vw;
+            border: 2px solid black;
+            height: 400px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Faça uma escolha</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium sed perferendis est harum vel saepe, alias, quis itaque quasi, ullam in! Animi repellat omnis doloremque quam est placeat nisi hic.</p>
+    <br>
+
+    <ul>
+        <li><a href="paginas-extras/pagina001.html" target="frame">Primeria página</a></li>
+        <li><a href="paginas-extras/pagina002.html" target="frame">Segunda página</a></li>
+        <li><a href="paginas-extras/pagina003.html  " target="frame">Terceira página</a></li>
+    </ul>
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. At illum temporibus odit id velit, est tempore aliquam voluptas animi sequi ullam, corporis maxime accusantium, voluptatem nulla vel enim dolore ratione!</p>
+
+    <iframe id="tela" name="frame" srcdoc="<h1>Escolha uma das opções acima</h1><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam dolorum nihil, pariatur et quaerat, aliquam eligendi ipsa fugiat ut iste nulla nisi velit magni cupiditate saepe iure reiciendis vel impedit?Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, explicabo assumenda corporis modi hic est nesciunt fuga neque delectus autem impedit culpa sequi. Quibusdam illo omnis assumenda vitae deserunt sequi.</p>">
+        <p>Seu navegador nao suporta iframe</p>
+    </iframe>
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam dolorum nihil, pariatur et quaerat, aliquam eligendi ipsa fugiat ut iste nulla nisi velit magni cupiditate saepe iure reiciendis vel impedit?Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, explicabo assumenda corporis modi hic est nesciunt fuga neque delectus autem impedit culpa sequi. Quibusdam illo omnis assumenda vitae deserunt sequi.</p>
+</body>
+</html>

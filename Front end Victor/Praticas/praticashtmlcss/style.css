@@ -1,0 +1,27 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    color: red;
+}
+#imagem{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+h2 {
+    text-align: center;
+}
+iframe {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+#paragrafo{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: larger;
+}

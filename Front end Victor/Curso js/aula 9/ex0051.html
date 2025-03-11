@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entendendo o dom 2</title>
+    <style>
+        body{
+            background-color: rgb(11, 11, 11);
+            color: white;
+            font: normal 18pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Estudos dom</h1>
+    <p>Praticando mais uma vez esse <strong>trem</strong>. preciso fazer exercícios só isso não basta. <br>
+    terminar este curso até o fim de setembro.</p>
+    <p>Segundo paragrafo.</p>
+    <div id="hh">Clique em mim</div>
+    <script>
+        // selecionando por marca Tag name()
+        var p1 = window.document.getElementsByTagName('p')[1]
+        document.write("Está escrito no paragrafo 2: " + p1.innerText)
+        p1.style.color = 'blue'
+        //selecionado por Id by Id()
+        /*var d = window.document.getElementById('hh')
+        d.style.background = 'purple'
+        d.innerText = "Estou aguardando..."*/
+
+        //selecionando por query selector()
+        var d = document.querySelector('div#hh')
+        d.style.color = 'purple'
+        d.style.background = 'white'
+
+    </script>
+</body>
+</html>

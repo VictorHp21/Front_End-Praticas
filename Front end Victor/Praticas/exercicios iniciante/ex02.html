@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Interagindo com o sistema</h1>
+    <input type="button" value="Interagindo" onclick="dat()">
+    <section id="resultado">
+        <p>Aqui vai sair o resultado</p>
+       
+    </section>
+    <p id="msg">a</p>
+    <script>    
+        function dat(){
+            var dataAtual = new Date()
+            var hora = dataAtual.getHours()
+            var data = dataAtual.getDate()
+            var msgb = document.getElementById('msg')
+           // var data = getDate()
+            var res = document.getElementById('resultado')
+            res.innerHTML = `A informação recebida do sistema foi dia ${data} as ${hora} horas`
+
+                if(hora <= 12 && hora >= 6  ){
+                    msgb.innerHTML = `Bom dia`
+                } else if (hora > 12 && hora <= 17){
+                    msgb.innerHTML = `Boa tarde`
+                } else {
+                    msgb.innerHTML = `Boa noite`
+                }
+
+        }
+    </script>
+</body>
+</html>
