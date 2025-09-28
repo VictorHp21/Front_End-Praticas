@@ -8,11 +8,11 @@
         body{
             font-family: Arial, Helvetica, sans-serif;
         }
-        div > p {
+        div#q2 > p {
             display: none;
         }
         
-        div:hover > p {
+        div#q2:hover > p {
             display: block;
             color: white;
             background-color: purple;
@@ -22,15 +22,27 @@
         div:hover{
             color: red;
         }
+
+        div#q1{
+           display: inline;
+        }
+
+        div#q1:hover{
+            background-color: black;
+        }
     </style>
 </head>
 <body>
     <h1>Exemplo de Hover</h1>
     <p>passe o mouse sobre o texto abaixo</p>
-    <div>
+    <div id="q2">
        passe o mouse aqui
        <p>Texto escondido</p>
     </div>
     <p>Fim do exemplo</p>
+
+    <div id="q1">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et recusandae culpa, error similique numquam eum eos voluptatum atque facere aut, odit dolore tempora doloremque libero qui. Totam eos dolorem eius!</p>
+    </div>
 </body>
 </html>
